@@ -1,0 +1,73 @@
+{
+  "posts": [
+    {
+      "id": 4,
+      "title": "dsd",
+      "body": "typicode4"
+    },
+    {
+      "id": 5,
+      "title": "json-server5",
+      "body": "typicode5"
+    },
+    {
+      "id": 6,
+      "title": "json-server6",
+      "body": "typicode6"
+    },
+    {
+      "title": "Gago",
+      "body": "Gago",
+      "id": 7
+    },
+    {
+      "title": "Gags",
+      "body": "Gags",
+      "id": 8
+    },
+    {
+      "title": "Ono",
+      "body": "Ono",
+      "id": 9
+    },
+    {
+      "title": "A",
+      "body": "A",
+      "id": 10
+    },
+    {
+      "title": "sdd",
+      "body": "sdd",
+      "id": 11
+    },
+    {
+      "title": "fdfdfdf",
+      "body": "fdfdfdf",
+      "id": 12
+    },
+    {
+      "title": "fdfdf",
+      "body": "fdfdf",
+      "id": 13
+    },
+    {
+      "title": "Gagasik",
+      "body": "Gagasik",
+      "id": 14
+    },
+    {
+      "title": "ono",
+      "body": "ono",
+      "id": 15
+    },
+    {
+      "title": "kk",
+      "body": "pp",
+      "id": 16
+    }
+  ],
+  "comments": [],
+  "profile": {
+    "name": "typicode"
+  }
+}

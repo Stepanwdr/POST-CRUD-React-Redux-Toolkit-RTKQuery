@@ -1,26 +1,24 @@
-import React from 'react';
-import logo from './logo.svg';
+import {FC, useEffect} from 'react';
 import './App.css';
+import { useAppSelector } from './hooks/useAppSelector';
+import { userSlice } from './store/reducers/UserSlice';
+import { useAppDispatch } from './hooks/useAppDispatch';
+import { fetchUsers } from './store/reducers/ActionCreators';
+import PostContainer from './components/PostContainer';
+const App:FC=()=>{
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+  const {count,users,error,isLoading}=useAppSelector(state=>state.userReducer)
+   const {Increment}=userSlice.actions
+   const dispatch=useAppDispatch() 
+
+useEffect(()=>{
+dispatch(fetchUsers())
+},[])
+return <>
+    <div>
+   <PostContainer/>
     </div>
-  );
+</>
 }
 
 export default App;
